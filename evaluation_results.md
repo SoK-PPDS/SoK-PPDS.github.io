@@ -1,10 +1,16 @@
-To be completed in 1 day. Please check back later. :)
+To be completed in 1 day. Please check back later! :)
 
 ## Additional Experimental Results
 
 ### Table of Contents
 
+- [Runtime of Different Approaches](#runtime-of-different-approaches)
+- [Visualization of Generated Images](#visualization-of-generated-images)
 - [Full Evaluation Results](#full-evaluation-results)
+
+### Runtime of Different Approaches
+
+### Visualization of Generated Images
 
 ### Full Evaluation Results
 

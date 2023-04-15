@@ -77,7 +77,7 @@ Below are different classifiers:
 
   6. Multilayer Perceptron: [Jordon et al., 2019](https://openreview.net/pdf?id=S1zk9iRqF7), [Long et al., 2021](https://papers.nips.cc/paper/2021/file/171ae1bbb81475eb96287dd78565b38b-Paper.pdf), [Harder et al., 2020](https://arxiv.org/pdf/2002.11603.pdf)
 
-<u>Measure</u>: accuracy/misclassification rate/Area Under the Receiver Operating Characteristics(AUROC)
+<u>Measure</u>: accuracy/misclassification rate/Area Under the Receiver Operating Characteristics (AUROC)
 
 
 **S1-A2.** Regression
@@ -204,8 +204,14 @@ The readers can refer to [Costa et al., 2007](https://www.researchgate.net/publi
 
 **U1-F4.** Jensen-Shannon Scores ([Fuglede et al., 2004](https://ieeexplore.ieee.org/abstract/document/1365067)): [Zhang et al., 2018](https://arxiv.org/pdf/1801.01594.pdf), [Xu et al., 2019](https://ieeexplore.ieee.org/document/8636556), [Yang et al., 2020](https://ieeexplore.ieee.org/document/9343179)
 
-**U1-A1.** Classification [accuracy/error]: [Liu et al. 2019](https://arxiv.org/pdf/1910.02007.pdf), [Xie et al. 2018](https://arxiv.org/pdf/1802.06739.pdf), [Frigerio et al. 2019](https://link.springer.com/chapter/10.1007/978-3-030-22312-0_11), [Zhang et al., 2018](https://arxiv.org/pdf/1801.01594.pdf), [Xu et al., 2019](https://ieeexplore.ieee.org/document/8636556), [Yang et al., 2020](https://ieeexplore.ieee.org/document/9343179), [Chen et al., 2020](https://arxiv.org/pdf/2006.08265.pdf), [Torkzadehmahani et al., 2019](https://arxiv.org/pdf/2001.09700.pdf), [Triastcyn et al., 2020](https://arxiv.org/pdf/2003.00997.pdf), [Long et al., 2021](https://papers.nips.cc/paper/2021/file/171ae1bbb81475eb96287dd78565b38b-Paper.pdf), [Wang et al., 2021](https://arxiv.org/abs/2103.11109), [Ma et al., 2020](https://arxiv.org/pdf/2007.02056.pdf), [Imtiaz et al., 2021](https://ieeexplore.ieee.org/document/9522203), [Harder et al., 2020](https://arxiv.org/pdf/2002.11603.pdf), [Chen et al., 2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_DPGEN_Differentially_Private_Generative_Energy-Guided_Network_for_Natural_Image_Synthesis_CVPR_2022_paper.pdf), [Zhang et al., 2021](https://arxiv.org/abs/2104.12581), [Triastcyn et al., 2020](https://ieeexplore.ieee.org/document/9091604)
+**U1-A1.** Classification 
 
-**U1-A2.** Segmentation [Hausdorﬀ distance]: [Schwabedal et al., 2020](https://arxiv.org/pdf/2005.00783.pdf)
+<u>Measure</u>: accuracy/error: [Liu et al. 2019](https://arxiv.org/pdf/1910.02007.pdf), [Xie et al. 2018](https://arxiv.org/pdf/1802.06739.pdf), [Frigerio et al. 2019](https://link.springer.com/chapter/10.1007/978-3-030-22312-0_11), [Zhang et al., 2018](https://arxiv.org/pdf/1801.01594.pdf), [Xu et al., 2019](https://ieeexplore.ieee.org/document/8636556), [Yang et al., 2020](https://ieeexplore.ieee.org/document/9343179), [Chen et al., 2020](https://arxiv.org/pdf/2006.08265.pdf), [Torkzadehmahani et al., 2019](https://arxiv.org/pdf/2001.09700.pdf), [Triastcyn et al., 2020](https://arxiv.org/pdf/2003.00997.pdf), [Long et al., 2021](https://papers.nips.cc/paper/2021/file/171ae1bbb81475eb96287dd78565b38b-Paper.pdf), [Wang et al., 2021](https://arxiv.org/abs/2103.11109), [Ma et al., 2020](https://arxiv.org/pdf/2007.02056.pdf), [Imtiaz et al., 2021](https://ieeexplore.ieee.org/document/9522203), [Harder et al., 2020](https://arxiv.org/pdf/2002.11603.pdf), [Chen et al., 2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_DPGEN_Differentially_Private_Generative_Energy-Guided_Network_for_Natural_Image_Synthesis_CVPR_2022_paper.pdf), [Zhang et al., 2021](https://arxiv.org/abs/2104.12581), [Triastcyn et al., 2020](https://ieeexplore.ieee.org/document/9091604)
 
-**U1-A3.** Data Debugging [visualization]: [Chen et al., 2020](https://arxiv.org/pdf/2006.08265.pdf), [Triastcyn et al., 2020](https://arxiv.org/pdf/2003.00997.pdf), [Augenstein et al., 2020](https://arxiv.org/abs/1911.06679)
+**U1-A2.** Segmentation
+
+<u>Measure</u>: Hausdorff distance: [Schwabedal et al., 2020](https://arxiv.org/pdf/2005.00783.pdf)
+
+**U1-A3.** Data Debugging
+
+<u>Measure</u>: visualization: [Chen et al., 2020](https://arxiv.org/pdf/2006.08265.pdf), [Triastcyn et al., 2020](https://arxiv.org/pdf/2003.00997.pdf), [Augenstein et al., 2020](https://arxiv.org/abs/1911.06679)

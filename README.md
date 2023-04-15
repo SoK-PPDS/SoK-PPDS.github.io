@@ -1,4 +1,4 @@
-# Supplementary Information for 2023 S&P Submission #311
+## Supplementary Information for 2023 S&P Submission #311
 
 This website contains supplementary information for our 2023 S&P submission #311: SoK: Privacy-Preserving Data Synthesis.
 
@@ -6,7 +6,10 @@ This website contains supplementary information for our 2023 S&P submission #311
 
 
 ### 2. Evaluation
-#### 2.1 [Additional Experimental Results](./evaluation_results.md)
 
-#### 2.2 [Additional Conclusions](./evaluation_conclusions.md)
+#### 2.1 [Additional Details on Experimental Setups](./evaluation_setups)
+
+#### 2.2 [Additional Experimental Results](./evaluation_results.md)
+
+#### 2.3 [Additional Conclusions](./evaluation_conclusions.md)
 

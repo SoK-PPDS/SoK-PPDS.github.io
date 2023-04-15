@@ -1,10 +1,10 @@
 To be completed in 1 day. Please check back later. :)
 
-## Table of Contents
+## Additional Experimental Results
+
+### Table of Contents
 
 - [Full Evaluation Results](#full-evaluation-results)
-
-## Additional Experimental Results
 
 ### Full Evaluation Results
 
@@ -40,6 +40,7 @@ Table 1-b: Standard Scenario -- $\varepsilon=10$.
 | DPGEN       | 95.0 | 98.2 | 84.4         | 90.0          | 49.6        | 76.5         | 75.7       | 74.0          | 81.9 | 73.9     | 81.7    | 82.7 | 93.5    | 9.3   | 6.7 |
 
 Table 1-c: Standard Scenario -- $\varepsilon=1$.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 40.0 | 58.6 | 47.6         | 25.6          | 14.9        | 41.2         | 52.8       | 13.3          | 47.3 | 11.8     | 17.6    | 8.4  | 16.5    | 387.1 | 1.0 |
@@ -50,6 +51,7 @@ Table 1-c: Standard Scenario -- $\varepsilon=1$.
 | DPGEN       | 92.3 | 97.6 | 71.7         | 54.9          | 39.2        | 31.5         | 56.0       | 22.8          | 68.7 | 47.6     | 47.1    | 9.4  | 84.9    | 125.5 | 1.3 |
 
 Table 1-d: Challenging Scenario -- $\varepsilon=0.2$.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 15.1 | 8.9  | 13.3         | 12.3          | 9.7         | 14.0         | 16.0       | 9.0           | 10.8 | 12.9     | 12.0    | 11.4 | 13.7    | 420.2 | 1.3 |
@@ -60,6 +62,7 @@ Table 1-d: Challenging Scenario -- $\varepsilon=0.2$.
 | DPGEN       | 79.8 | 96.1 | 64.2         | 30.5          | 26.0        | 9.6          | 39.3       | 23.1          | 60.3 | 36.9     | 33.5    | 8.6  | 69.5    | 183.1 | 1.0 |
 
 Table 1-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 69.7 | 71.2 | 73.6         | 62.1          | 29.5        | 68.6         | 72.3       | 25.2          | 74.3 | 18.3     | 37.1    | 22.5 | 46.8    | 295.1 | 1.7 |
@@ -73,6 +76,7 @@ Table 1-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
 Table 2: **Full evaluation results on Fashion-MNIST**. Each subtable below corresponds to one scenario.
 
 Table 2-a: Non-private scenario.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 79.3 | 78.7 | 78.4         | 65.1          | 63.4        | 65.7         | 74.7       | 42.5          | 79.5 | 19.9     | 48.4    | 59.0 | 65.9    | 64.0  | 7.7 |
@@ -83,6 +87,7 @@ Table 2-a: Non-private scenario.
 | DPGEN       | 80.2 | 84.5 | 78.3         | 78.9          | 59.4        | 60.5         | 76.5       | 67.8          | 73.7 | 55.1     | 76.3    | 75.8 | 80.9    | 14.4  | 7.3 |
 
 Table 2-b: Standard Scenario -- $\varepsilon=10$.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 63.9 | 59.5 | 66.1         | 59.1          | 42.9        | 61.2         | 65.2       | 38.6          | 66.9 | 17.4     | 49.0    | 35.9 | 49.1    | 290.8 | 3.7 |
@@ -93,6 +98,7 @@ Table 2-b: Standard Scenario -- $\varepsilon=10$.
 | DPGEN       | 79.5 | 84.0 | 78.1         | 79.1          | 56.9        | 60.5         | 76.4       | 70.2          | 73.7 | 43.6     | 76.8    | 76.6 | 80.7    | 11.0  | 7.3 |
 
 Table 2-c: Standard Scenario -- $\varepsilon=1$.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 44.8 | 54.1 | 48.9         | 37.6          | 17.6        | 48.5         | 51.2       | 18.0          | 49.5 | 10.0     | 22.7    | 19.8 | 19.6    | 433.7 | 1.4 |
@@ -103,6 +109,7 @@ Table 2-c: Standard Scenario -- $\varepsilon=1$.
 | DPGEN       | 36.3 | 41.7 | 43.5         | 10.5          | 17.1        | 18.8         | 27.1       | 14.4          | 36.7 | 18.9     | 14.8    | 11.2 | 21.5    | 113.2 | 2.0 |
 
 Table 2-d: Challenging Scenario -- $\varepsilon=0.2$.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 15.7 | 20.6 | 14.9         | 12.7          | 9.9         | 13.4         | 17.8       | 9.3           | 6.6  | 14.9     | 14.1    | 12.3 | 15.2    | 438.2 | 1.4 |
@@ -113,6 +120,7 @@ Table 2-d: Challenging Scenario -- $\varepsilon=0.2$.
 | DPGEN       | 27.1 | 33.2 | 32.0         | 9.8           | 10.0        | 11.1         | 24.5       | 14.0          | 33.3 | 12.3     | 12.9    | 8.6  | 21.3    | 190.0 | 1.2 |
 
 Table 2-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
+
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
 | DPGAN       | 61.9 | 58.7 | 64.3         | 60.7          | 20.6        | 59.9         | 63.2       | 32.5          | 65.0 | 24.3     | 49.8    | 30.7 | 45.9    | 316.0 | 2.3 |

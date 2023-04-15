@@ -6,3 +6,5 @@ relative_links:
 include:
   - README.md
   - data_utility_and_fidelity.md
+  - evaluation_results.md
+  - evaluation_conclusions.md

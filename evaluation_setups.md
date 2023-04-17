@@ -1,5 +1,13 @@
 ## Additional Details on Experimental Setups
 
+
+### Table of Contents
+- [More Details on Inclusion \& Exclusion Criteria](#more-details-on-inclusion--exclusion-criteria)
+- [Hyper-Parameters Tuning and Selection](#hyper-parameters-tuning-and-selection)
+- [Configurations and Hyper-Parameters for the Classifiers for Evaluation](#configurations-and-hyper-parameters-for-the-classifiers-for-evaluation)
+- [References](#references)
+
+
 ### More Details on Inclusion & Exclusion Criteria
 
 We describe our approach to method selection.
@@ -32,6 +40,36 @@ Figure 1-a: G-PATE.
 Figure 1-b: DataLens.
 
 ![DataLens-MNIST-eps-10](./figs/datalens_mnist_eps-10.png)
+
+
+### Hyper-Parameters Tuning and Selection
+
+We introduce our procedure of hyper-parameter tuning and selection.
+
+**Hyper-parameter tuning**: We tune batch size, noise amplifier, gradient clipping norm, and other algorithm-specific hyper-parameters. For the combination of each approach and each scenario, we tune ~10 sets of hyper-parameters. 
+
+**Hyper-parameter selection**: The difficulty of hyper-parameter selection is mainly due to there not existing one sole evaluation criteria for the synthesized data. Particularly, we evaluate synthesized data against 13 classifiers (CNN, MLP, and other 11 scikit-learn classifiers). We describe our approach to evaluation and hyper-parameter selection as follows:
+
+1. We first measureed the accuracy of the synthesized data against three "good" classifiers---MLP, LDA, and logistic regression---whose performance are among the top in 13 classifiers. For these three classifiers, we used default hyper-parameters (see [the next section](#configurations-and-hyper-parameters-for-the-classifiers-for-evaluation) ) without further tuning them. After training, we took the average accuracy of three classifiers. 
+
+2. For each combination of an approach and a scenario, we selected the top 3~5 sets of hyper-paramters based on their performance on the above metric (i.e., average accuracy on the three classifiers).
+
+3. For the remaining 3~5 sets of hyper-parameters, we then trained CNNs on them. For training CNNs, we tuned the learning rate. We selected the best accuracy over all sets of CNN hyper-parameters.
+
+4. We selected the best hyper-parameter based on the performance in step 1 and step 3. We then evaluate this hyper-parameter on the remaining 9 classifiers. Note that we repeat the data generation and classifier training for 5 times and take the average for our final evaluation.
+
+We report the sets of hyper-parameters we experimented with and the best set of hyper-parameters we selected in [Evaluation Results](./evaluation_results.md).
+
+
+### Configurations and Hyper-Parameters for the Classifiers for Evaluation
+
+We describe our configurations and hyper-parameters for the 13 classifiers for evaluation.
+
+1. **CNN**: We used the evaluation code [``eval_cnn.py``](https://github.com/DingfanChen/GS-WGAN/blob/main/evaluation/eval_cnn.py) in the repository of [9]. The CNN architecture is LeNet [17]. We tuned the learning rate of the CNN training, among 0.01, 0.02, 0.05, and 0.1.
+
+2. **MLP**: We used the scikit-learn MLP classifier (neural_network.MLPClassifier) with the default hyper-parameters.
+
+3. **logistic_reg, random_forest, gaussian_nb, bernoulli_nb, linear_svc, decision_tree, lda, adaboost, bagging, gbm, xgboost**: We used the scikit-learn classifiers. We follow the implementation of [``synth_data_benchmark.py``](https://github.com/ParkLabML/DP-MERF/blob/master/code_balanced/synth_data_benchmark.py) in the repository of DP-MERF [14] and used the same hyper-parameters for these classifiers.
 
 
 ### References
@@ -68,3 +106,4 @@ Figure 1-b: DataLens.
 
 [16] Cao, Tianshi, et al. "Don’t generate me: Training differentially private generative models with sinkhorn divergence." Advances in Neural Information Processing Systems 34 (2021): 12480-12492.
 
+[17] LeCun, Yann, et al. "Gradient-based learning applied to document recognition." Proceedings of the IEEE 86.11 (1998): 2278-2324.

@@ -4,11 +4,47 @@ To be completed in 1 day. Please check back later! :)
 
 ### Table of Contents
 
-- [Runtime of Different Approaches](#runtime-of-different-approaches)
-- [Visualization of Generated Images](#visualization-of-generated-images)
-- [Full Evaluation Results](#full-evaluation-results)
+- [Additional Experimental Results](#additional-experimental-results)
+  - [Table of Contents](#table-of-contents)
+  - [Runtime of Different Approaches](#runtime-of-different-approaches)
+  - [Visualization of Generated Images](#visualization-of-generated-images)
+  - [Full Evaluation Results](#full-evaluation-results)
 
 ### Runtime of Different Approaches
+
+We report the runtime of different approaches.
+For each scenario,  
+we report the runtime for the run using the best hyper-parameters (reported in [Evaluation Setups](./evaluation_setups.md)).
+
+The results are presented in Table 1. The numbers are in seconds.
+
+To summarize, DP-MERF is the most efficient algorithm and finishes within a minute.
+DPGEN is most time-consuming, due to the sample efficiency issues of diffusion models.
+
+Table 1: **Runtime comparisons** between different approaches. The numbers are in seconds.
+
+Table 1-a: MNIST.
+
+|             | non-private | $\varepsilon=10$ | $\varepsilon=1$ | $\varepsilon=0.2$ | half     |
+|-------------|-------------|------------------|-----------------|-------------------|----------|
+| DPGAN       | 1090.2      | 698.8            | 927.3           | 45.9              | 399.7    |
+| DP-CGAN     | 859.0       | 881.6            | 525.3           | 157.1             | 832.7    |
+| GS-WGAN     | 8107.9      | 6728.5           | 1344.3          | 65.0              | 8574.1   |
+| DP-MERF     | 53.7        | 35.9             | 39.0            | 36.5              | 41.5     |
+| DP-Sinkhorn | 634.0       | 29626.0          | 13497.0         | 15087.0           | 42280.0  |
+| DPGEN       | 194106.0    | 149766.0         | 213196.0        | 124279.0          | 188399.0 |
+
+Table 1-b: Fashion-MNIST.
+
+|             | non-private | $\varepsilon=10$ | $\varepsilon=1$ | $\varepsilon=0.2$ | half     |
+|-------------|-------------|------------------|-----------------|-------------------|----------|
+| DPGAN       | 1059.7      | 934.0            | 921.3           | 39.3              | 371.3    |
+| DP-CGAN     | 966.6       | 859.1            | 1064.1          | 145.4             | 814.7    |
+| GS-WGAN     | 9671.6      | 6590.5           | 2466.7          | 170.0             | 8215.8   |
+| DP-MERF     | 53.6        | 28.2             | 34.2            | 41.6              | 32.8     |
+| DP-Sinkhorn | 649.0       | 14668.0          | 24140.0         | 16641.0           | 36090.0  |
+| DPGEN       | 193837.0    | 146750.0         | 105233.0        | 126115.0          | 188053.0 |
+
 
 ### Visualization of Generated Images
 
@@ -16,14 +52,14 @@ To be completed in 1 day. Please check back later! :)
 
 We evaluate six DL-based approaches on two datasets (MNIST and Fashion-MNIST), under five scenarios (non-private, two standard, and two challenging). 
 
-We measure their utility (by classifier accuracy) and fidelity (by FID and IS) of the .
+We measure the utility (by classifier accuracy) and fidelity (by FID and IS) of the synthesized data.
 For classification, we adopt 13 classifiers, including MLP, CNN, and 11 scikit-learn classifiers. 
 
 We present the full results below.
 
-Table 1: **Full evaluation results on MNIST**. Each subtable below corresponds to one scenario.
+Table 2: **Full evaluation results on MNIST**. Each subtable below corresponds to one scenario.
 
-Table 1-a: Non-private scenario.
+Table 2-a: Non-private scenario.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -34,7 +70,7 @@ Table 1-a: Non-private scenario.
 | DP-Sinkhorn | 89.4 | 92.3 | 88.9         | 81.6          | 71.6        | 83.6         | 87.1       | 32.2          | 86.3 | 25.2     | 52.4    | 43.5 | 74.4    | 52.3  | 9.8 |
 | DPGEN       | 95.7 | 98.2 | 88.6         | 92.9          | 63.9        | 80.0         | 87.6       | 79.8          | 84.9 | 73.7     | 86.6    | 86.0 | 94.3    | 6.2   | 7.9 |
 
-Table 1-b: Standard Scenario -- $\varepsilon=10$.
+Table 2-b: Standard Scenario -- $\varepsilon=10$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -45,7 +81,7 @@ Table 1-b: Standard Scenario -- $\varepsilon=10$.
 | DP-Sinkhorn | 77.0 | 79.6 | 77.6         | 50.7          | 55.0        | 76.1         | 68.7       | 31.6          | 72.9 | 20.8     | 36.1    | 42.7 | 45.3    | 78.0  | 5.9 |
 | DPGEN       | 95.0 | 98.2 | 84.4         | 90.0          | 49.6        | 76.5         | 75.7       | 74.0          | 81.9 | 73.9     | 81.7    | 82.7 | 93.5    | 9.3   | 6.7 |
 
-Table 1-c: Standard Scenario -- $\varepsilon=1$.
+Table 2-c: Standard Scenario -- $\varepsilon=1$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -56,7 +92,7 @@ Table 1-c: Standard Scenario -- $\varepsilon=1$.
 | DP-Sinkhorn | 61.5 | 61.9 | 66.9         | 15.2          | 32.9        | 60.0         | 61.1       | 13.6          | 59.8 | 12.1     | 9.3     | 17.1 | 21.4    | 200.0 | 3.3 |
 | DPGEN       | 92.3 | 97.6 | 71.7         | 54.9          | 39.2        | 31.5         | 56.0       | 22.8          | 68.7 | 47.6     | 47.1    | 9.4  | 84.9    | 125.5 | 1.3 |
 
-Table 1-d: Challenging Scenario -- $\varepsilon=0.2$.
+Table 2-d: Challenging Scenario -- $\varepsilon=0.2$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -67,7 +103,7 @@ Table 1-d: Challenging Scenario -- $\varepsilon=0.2$.
 | DP-Sinkhorn | 56.6 | 48.8 | 58.7         | 36.2          | 20.8        | 35.0         | 54.3       | 25.9          | 50.2 | 20.8     | 23.6    | 25.6 | 31.3    | 208.9 | 1.1 |
 | DPGEN       | 79.8 | 96.1 | 64.2         | 30.5          | 26.0        | 9.6          | 39.3       | 23.1          | 60.3 | 36.9     | 33.5    | 8.6  | 69.5    | 183.1 | 1.0 |
 
-Table 1-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
+Table 2-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -79,9 +115,9 @@ Table 1-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
 | DPGEN       | 96.0 | 98.4 | 89.1         | 93.5          | 61.9        | 80.8         | 88.2       | 81.8          | 85.5 | 74.4     | 88.2    | 86.7 | 95.1    | 5.5   | 8.0 |
 
 
-Table 2: **Full evaluation results on Fashion-MNIST**. Each subtable below corresponds to one scenario.
+Table 3: **Full evaluation results on Fashion-MNIST**. Each subtable below corresponds to one scenario.
 
-Table 2-a: Non-private scenario.
+Table 3-a: Non-private scenario.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -92,7 +128,7 @@ Table 2-a: Non-private scenario.
 | DP-Sinkhorn | 77.6 | 77.5 | 78.2         | 67.6          | 61.3        | 64.7         | 74.4       | 41.0          | 78.9 | 25.3     | 48.0    | 39.9 | 70.5    | 90.8  | 7.5 |
 | DPGEN       | 80.2 | 84.5 | 78.3         | 78.9          | 59.4        | 60.5         | 76.5       | 67.8          | 73.7 | 55.1     | 76.3    | 75.8 | 80.9    | 14.4  | 7.3 |
 
-Table 2-b: Standard Scenario -- $\varepsilon=10$.
+Table 3-b: Standard Scenario -- $\varepsilon=10$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -103,7 +139,7 @@ Table 2-b: Standard Scenario -- $\varepsilon=10$.
 | DP-Sinkhorn | 69.4 | 65.4 | 71.2         | 51.4          | 54.8        | 59.8         | 63.7       | 30.4          | 69.6 | 20.7     | 35.5    | 37.7 | 57.1    | 164.3 | 4.5 |
 | DPGEN       | 79.5 | 84.0 | 78.1         | 79.1          | 56.9        | 60.5         | 76.4       | 70.2          | 73.7 | 43.6     | 76.8    | 76.6 | 80.7    | 11.0  | 7.3 |
 
-Table 2-c: Standard Scenario -- $\varepsilon=1$.
+Table 3-c: Standard Scenario -- $\varepsilon=1$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -114,7 +150,7 @@ Table 2-c: Standard Scenario -- $\varepsilon=1$.
 | DP-Sinkhorn | 58.0 | 56.3 | 62.6         | 38.8          | 26.7        | 43.8         | 54.5       | 25.2          | 58.1 | 23.1     | 30.9    | 29.8 | 30.3    | 216.2 | 2.9 |
 | DPGEN       | 36.3 | 41.7 | 43.5         | 10.5          | 17.1        | 18.8         | 27.1       | 14.4          | 36.7 | 18.9     | 14.8    | 11.2 | 21.5    | 113.2 | 2.0 |
 
-Table 2-d: Challenging Scenario -- $\varepsilon=0.2$.
+Table 3-d: Challenging Scenario -- $\varepsilon=0.2$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|
@@ -125,7 +161,7 @@ Table 2-d: Challenging Scenario -- $\varepsilon=0.2$.
 | DP-Sinkhorn | 45.9 | 44.3 | 50.6         | 25.1          | 19.8        | 42.3         | 44.1       | 24.1          | 49.6 | 21.8     | 20.6    | 17.2 | 22.4    | 260.5 | 2.6 |
 | DPGEN       | 27.1 | 33.2 | 32.0         | 9.8           | 10.0        | 11.1         | 24.5       | 14.0          | 33.3 | 12.3     | 12.9    | 8.6  | 21.3    | 190.0 | 1.2 |
 
-Table 2-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
+Table 3-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
 
 |             | MLP  | CNN  | logistic_reg | random_forest | gaussian_nb | bernoulli_nb | linear_svc | decision_tree | lda  | adaboost | bagging | gbm  | xgboost | FID   | IS  |
 |-------------|------|------|--------------|---------------|-------------|--------------|------------|---------------|------|----------|---------|------|---------|-------|-----|

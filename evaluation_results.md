@@ -10,13 +10,14 @@ To be completed in 1 day. Please check back later! :)
 
 ### Runtime of Different Approaches
 
-We report the runtime of different approaches.
-For each scenario,  
-we report the runtime for the run using the best hyper-parameters (reported in [Evaluation Setups](./evaluation_setups.md)).
+We evaluate six DL-based approaches on two datasets (MNIST and Fashion-MNIST), under five scenarios (non-private, two standard, and two challenging). 
+
+We report the runtime of different approaches. For each scenario, we report the runtime for the run using the best hyper-parameters (reported in [Evaluation Setups](./evaluation_setups.md)).
 
 The results are presented in Table 1. The numbers are in seconds.
 
 To summarize, DP-MERF is the most efficient algorithm and finishes within a minute.
+This can be attributed to its simple optimization procedure.
 DPGEN is most time-consuming, due to the sample efficiency issues of diffusion models.
 
 Table 1: **Runtime comparisons** between different approaches. The numbers are in seconds.
@@ -48,12 +49,12 @@ Table 1-b: Fashion-MNIST.
 
 ### Full Evaluation Results
 
-We evaluate six DL-based approaches on two datasets (MNIST and Fashion-MNIST), under five scenarios (non-private, two standard, and two challenging). 
-
 We measure the utility (by classifier accuracy) and fidelity (by FID and IS) of the synthesized data.
 For classification, we adopt 13 classifiers, including MLP, CNN, and 11 scikit-learn classifiers. 
 
 We present the full results below.
+
+The highlighted conclusions are discussed in the submission Sec. 5.2. Additional conclusions are discussed in [Additional Conclusions](./evaluation_conclusions.md).
 
 Table 2: **Full evaluation results on MNIST**. Each subtable below corresponds to one scenario.
 

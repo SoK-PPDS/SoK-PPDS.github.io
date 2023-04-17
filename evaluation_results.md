@@ -1,5 +1,3 @@
-To be completed in 1 day. Please check back later! :)
-
 ## Additional Experimental Results
 
 ### Table of Contents

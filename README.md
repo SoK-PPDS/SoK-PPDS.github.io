@@ -7,7 +7,7 @@ This website contains supplementary information for our 2023 S&P submission #311
 
 ### 2. Evaluation
 
-#### 2.1 [Additional Details on Experimental Setups](./evaluation_setups)
+#### 2.1 [Additional Details on Experimental Setups](./evaluation_setups.md)
 
 #### 2.2 [Additional Experimental Results](./evaluation_results.md)
 

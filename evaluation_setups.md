@@ -50,7 +50,7 @@ We introduce our procedure of hyper-parameter tuning and selection.
 
 **Hyper-parameter selection**: The difficulty of hyper-parameter selection is mainly due to there not existing one sole evaluation criteria for the synthesized data. Particularly, we evaluate synthesized data against 13 classifiers (CNN, MLP, and other 11 scikit-learn classifiers). We describe our approach to evaluation and hyper-parameter selection as follows:
 
-1. We first measureed the accuracy of the synthesized data against three "good" classifiers---MLP, LDA, and logistic regression---whose performance are among the top in 13 classifiers. For these three classifiers, we used default hyper-parameters (see [the next section](#configurations-and-hyper-parameters-for-the-classifiers-for-evaluation) ) without further tuning them. After training, we took the average accuracy of three classifiers. 
+1. We first measureed the accuracy of the synthesized data against three "good" classifiers---MLP, LDA, and logistic regression---whose performance are among the top in 13 classifiers. For these three classifiers, we used default hyper-parameters (see [the next section](#configurations-and-hyper-parameters-for-the-classifiers-for-evaluation)) without further tuning them. After training, we took the average accuracy of three classifiers. 
 
 2. For each combination of an approach and a scenario, we selected the top 3~5 sets of hyper-paramters based on their performance on the above metric (i.e., average accuracy on the three classifiers).
 

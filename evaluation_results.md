@@ -4,11 +4,9 @@ To be completed in 1 day. Please check back later! :)
 
 ### Table of Contents
 
-- [Additional Experimental Results](#additional-experimental-results)
-  - [Table of Contents](#table-of-contents)
-  - [Runtime of Different Approaches](#runtime-of-different-approaches)
-  - [Visualization of Generated Images](#visualization-of-generated-images)
-  - [Full Evaluation Results](#full-evaluation-results)
+- [Runtime of Different Approaches](#runtime-of-different-approaches)
+- [Visualization of Generated Images](#visualization-of-generated-images)
+- [Full Evaluation Results](#full-evaluation-results)
 
 ### Runtime of Different Approaches
 

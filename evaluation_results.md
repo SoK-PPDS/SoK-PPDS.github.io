@@ -47,19 +47,19 @@ Table 1-b: Fashion-MNIST.
 
 We present the synthesized images produced by each approach under each scenario.
 
-For the combination of each approach and scenario, we randomly sample 10 images for each class. We present the images in 10x10 grids, where each column corresponds to one class.
+For the combination of each approach and scenario, we randomly sample 10 images for each class. We present the images in 10x10 grids, where each column corresponds to one class. 
 
-Figure 1: **Synthesized Images by different approaches on MNIST dataset.**
+Refer to Fig. 1 and Fig. 2 for the images synthesized by different approaches on MNIST and Fashion-MNIST.
+
+Note to readers:
+
+- The images are big; please allow some time for them to load.
+
+- To have a clearer view, you can right click the image and choose "Open Image in New Tab".
+
+Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The five columns are "non-private", "$\varepsilon=10$", "$\varepsilon=1$", "$\varepsilon=0.2$", and "half" from left to right.
 
 <table>
-  <tr>
-    <td></td>
-    <td>non-private</td>
-    <td>$\varepsilon=10$</td>
-    <td>$\varepsilon=1$</td>
-    <td>$\varepsilon=0.2$</td>
-    <td>half</td>
-  </tr>
   <tr>
     <td>
       DPGAN
@@ -243,17 +243,10 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.**
 </table>
 
 
-Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.** We comment that the labels in DPGEN are produced by a classifier. For poorly synthesized images, the produced labels can be highly imbalanced. For the cases where a certain label is not present, we present all-white images in the entire column, as in row "DPGEN", columns "$\varepsilon=1$" and "$\varepsilon=0.2$", classes 5 and 7.
+
+Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.** The five columns are "non-private", "$\varepsilon=10$", "$\varepsilon=1$", "$\varepsilon=0.2$", and "half" from left to right. We comment that the labels in DPGEN are produced by a classifier. For poorly synthesized images, the produced labels can be highly imbalanced. For the cases where a certain label is not present, we present all-white images in the entire column, as in row "DPGEN", columns "$\varepsilon=1$" and "$\varepsilon=0.2$", classes 5 and 7.
 
 <table>
-  <tr>
-    <td></td>
-    <td>non-private</td>
-    <td>$\varepsilon=10$</td>
-    <td>$\varepsilon=1$</td>
-    <td>$\varepsilon=0.2$</td>
-    <td>half</td>
-  </tr>
   <tr>
     <td>
       DPGAN
@@ -435,6 +428,7 @@ Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.
     </td>
   </tr>
 </table>
+
 
 
 ### Full Evaluation Results

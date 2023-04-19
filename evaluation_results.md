@@ -8,6 +8,12 @@
   - [Visualization of Synthesized Images](#visualization-of-synthesized-images)
   - [Full Evaluation Results](#full-evaluation-results)
   - [Hyper-Parameters](#hyper-parameters)
+    - [DPGAN](#dpgan)
+    - [DP-CGAN](#dp-cgan)
+    - [GS-WGAN](#gs-wgan)
+    - [DP-MERF](#dp-merf)
+    - [DPGEN](#dpgen)
+    - [DP-Sinkhorn](#dp-sinkhorn)
 
 ### Runtime of Different Approaches
 
@@ -63,186 +69,186 @@ Note to readers:
 Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The five columns are "non-private", "$\varepsilon=10$", "$\varepsilon=1$", "$\varepsilon=0.2$", and "half" from left to right.
 
 <table>
-  <tr>
-    <td>
-      DPGAN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_mnist_nonpriv.png" width="200" alt="DPGAN-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_mnist_eps-10.png" width="200" alt="DPGAN-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_mnist_eps-1.png" width="200" alt="DPGAN-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_mnist_eps-0.2.png" width="200" alt="DPGAN-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_mnist_half.png" width="200" alt="DPGAN-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DP-CGAN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_mnist_nonpriv.png" width="200" alt="DP-CGAN-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_mnist_eps-10.png" width="200" alt="DP-CGAN-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_mnist_eps-1.png" width="200" alt="DP-CGAN-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_mnist_eps-0.2.png" width="200" alt="DP-CGAN-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_mnist_half.png" width="200" alt="DP-CGAN-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      GS-WGAN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_mnist_nonpriv.png" width="200" alt="GS-WGAN-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_mnist_eps-10.png" width="200" alt="GS-WGAN-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_mnist_eps-1.png" width="200" alt="GS-WGAN-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_mnist_eps-0.2.png" width="200" alt="GS-WGAN-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_mnist_half.png" width="200" alt="GS-WGAN-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DP-MERF
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_mnist_nonpriv.png" width="200" alt="DP-MERF-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_mnist_eps-10.png" width="200" alt="DP-MERF-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_mnist_eps-1.png" width="200" alt="DP-MERF-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_mnist_eps-0.2.png" width="200" alt="DP-MERF-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_mnist_half.png" width="200" alt="DP-MERF-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DP-Sinkhorn
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_mnist_nonpriv.png" width="200" alt="DP-Sinkhorn-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_mnist_eps-10.png" width="200" alt="DP-Sinkhorn-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_mnist_eps-1.png" width="200" alt="DP-Sinkhorn-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_mnist_eps-0.2.png" width="200" alt="DP-Sinkhorn-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_mnist_half.png" width="200" alt="DP-Sinkhorn-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DPGEN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_mnist_nonpriv.png" width="200" alt="DPGEN-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_mnist_eps-10.png" width="200" alt="DPGEN-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_mnist_eps-1.png" width="200" alt="DPGEN-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_mnist_eps-0.2.png" width="200" alt="DPGEN-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_mnist_half.png" width="200" alt="DPGEN-MNIST-half">
-      </figure>
-    </td>
-  </tr>
+<tr>
+<td>
+DPGAN
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_mnist_nonpriv.png" width="200" alt="DPGAN-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_mnist_eps-10.png" width="200" alt="DPGAN-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_mnist_eps-1.png" width="200" alt="DPGAN-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_mnist_eps-0.2.png" width="200" alt="DPGAN-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_mnist_half.png" width="200" alt="DPGAN-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DP-CGAN
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_mnist_nonpriv.png" width="200" alt="DP-CGAN-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_mnist_eps-10.png" width="200" alt="DP-CGAN-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_mnist_eps-1.png" width="200" alt="DP-CGAN-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_mnist_eps-0.2.png" width="200" alt="DP-CGAN-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_mnist_half.png" width="200" alt="DP-CGAN-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+GS-WGAN
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_mnist_nonpriv.png" width="200" alt="GS-WGAN-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_mnist_eps-10.png" width="200" alt="GS-WGAN-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_mnist_eps-1.png" width="200" alt="GS-WGAN-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_mnist_eps-0.2.png" width="200" alt="GS-WGAN-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_mnist_half.png" width="200" alt="GS-WGAN-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DP-MERF
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_mnist_nonpriv.png" width="200" alt="DP-MERF-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_mnist_eps-10.png" width="200" alt="DP-MERF-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_mnist_eps-1.png" width="200" alt="DP-MERF-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_mnist_eps-0.2.png" width="200" alt="DP-MERF-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_mnist_half.png" width="200" alt="DP-MERF-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DP-Sinkhorn
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_mnist_nonpriv.png" width="200" alt="DP-Sinkhorn-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_mnist_eps-10.png" width="200" alt="DP-Sinkhorn-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_mnist_eps-1.png" width="200" alt="DP-Sinkhorn-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_mnist_eps-0.2.png" width="200" alt="DP-Sinkhorn-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_mnist_half.png" width="200" alt="DP-Sinkhorn-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DPGEN
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_mnist_nonpriv.png" width="200" alt="DPGEN-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_mnist_eps-10.png" width="200" alt="DPGEN-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_mnist_eps-1.png" width="200" alt="DPGEN-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_mnist_eps-0.2.png" width="200" alt="DPGEN-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_mnist_half.png" width="200" alt="DPGEN-MNIST-half">
+</figure>
+</td>
+</tr>
 </table>
 
 
@@ -250,186 +256,186 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The f
 Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.** The five columns are "non-private", "$\varepsilon=10$", "$\varepsilon=1$", "$\varepsilon=0.2$", and "half" from left to right. We comment that the labels in DPGEN are produced by a classifier. For poorly synthesized images, the produced labels can be highly imbalanced. For the cases where a certain label is not present, we present all-white images in the entire column, as in row "DPGEN", columns "$\varepsilon=1$" and "$\varepsilon=0.2$", classes 5 and 7.
 
 <table>
-  <tr>
-    <td>
-      DPGAN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_fashionmnist_nonpriv.png" width="200" alt="DPGAN-Fashion-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_fashionmnist_eps-10.png" width="200" alt="DPGAN-Fashion-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_fashionmnist_eps-1.png" width="200" alt="DPGAN-Fashion-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_fashionmnist_eps-0.2.png" width="200" alt="DPGAN-Fashion-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgan_fashionmnist_half.png" width="200" alt="DPGAN-Fashion-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DP-CGAN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_fashionmnist_nonpriv.png" width="200" alt="DP-CGAN-Fashion-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_fashionmnist_eps-10.png" width="200" alt="DP-CGAN-Fashion-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_fashionmnist_eps-1.png" width="200" alt="DP-CGAN-Fashion-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_fashionmnist_eps-0.2.png" width="200" alt="DP-CGAN-Fashion-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpcgan_fashionmnist_half.png" width="200" alt="DP-CGAN-Fashion-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      GS-WGAN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_fashionmnist_nonpriv.png" width="200" alt="GS-WGAN-Fashion-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_fashionmnist_eps-10.png" width="200" alt="GS-WGAN-Fashion-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_fashionmnist_eps-1.png" width="200" alt="GS-WGAN-Fashion-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_fashionmnist_eps-0.2.png" width="200" alt="GS-WGAN-Fashion-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/gswgan_fashionmnist_half.png" width="200" alt="GS-WGAN-Fashion-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DP-MERF
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_fashionmnist_nonpriv.png" width="200" alt="DP-MERF-Fashion-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_fashionmnist_eps-10.png" width="200" alt="DP-MERF-Fashion-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_fashionmnist_eps-1.png" width="200" alt="DP-MERF-Fashion-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_fashionmnist_eps-0.2.png" width="200" alt="DP-MERF-Fashion-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpmerf_fashionmnist_half.png" width="200" alt="DP-MERF-Fashion-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DP-Sinkhorn
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_nonpriv.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_eps-10.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_eps-1.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_eps-0.2.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_half.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-half">
-      </figure>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      DPGEN
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_fashionmnist_nonpriv.png" width="200" alt="DPGEN-Fashion-MNIST-nonpriv">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_fashionmnist_eps-10.png" width="200" alt="DPGEN-Fashion-MNIST-eps-10">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_fashionmnist_eps-1.png" width="200" alt="DPGEN-Fashion-MNIST-eps-1">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_fashionmnist_eps-0.2.png" width="200" alt="DPGEN-Fashion-MNIST-eps-0.2">
-      </figure>
-    </td>
-    <td>
-      <figure>
-        <img src="./figs/dpgen_fashionmnist_half.png" width="200" alt="DPGEN-Fashion-MNIST-half">
-      </figure>
-    </td>
-  </tr>
+<tr>
+<td>
+DPGAN
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_fashionmnist_nonpriv.png" width="200" alt="DPGAN-Fashion-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_fashionmnist_eps-10.png" width="200" alt="DPGAN-Fashion-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_fashionmnist_eps-1.png" width="200" alt="DPGAN-Fashion-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_fashionmnist_eps-0.2.png" width="200" alt="DPGAN-Fashion-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgan_fashionmnist_half.png" width="200" alt="DPGAN-Fashion-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DP-CGAN
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_fashionmnist_nonpriv.png" width="200" alt="DP-CGAN-Fashion-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_fashionmnist_eps-10.png" width="200" alt="DP-CGAN-Fashion-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_fashionmnist_eps-1.png" width="200" alt="DP-CGAN-Fashion-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_fashionmnist_eps-0.2.png" width="200" alt="DP-CGAN-Fashion-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpcgan_fashionmnist_half.png" width="200" alt="DP-CGAN-Fashion-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+GS-WGAN
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_fashionmnist_nonpriv.png" width="200" alt="GS-WGAN-Fashion-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_fashionmnist_eps-10.png" width="200" alt="GS-WGAN-Fashion-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_fashionmnist_eps-1.png" width="200" alt="GS-WGAN-Fashion-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_fashionmnist_eps-0.2.png" width="200" alt="GS-WGAN-Fashion-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/gswgan_fashionmnist_half.png" width="200" alt="GS-WGAN-Fashion-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DP-MERF
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_fashionmnist_nonpriv.png" width="200" alt="DP-MERF-Fashion-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_fashionmnist_eps-10.png" width="200" alt="DP-MERF-Fashion-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_fashionmnist_eps-1.png" width="200" alt="DP-MERF-Fashion-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_fashionmnist_eps-0.2.png" width="200" alt="DP-MERF-Fashion-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpmerf_fashionmnist_half.png" width="200" alt="DP-MERF-Fashion-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DP-Sinkhorn
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_fashionmnist_nonpriv.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_fashionmnist_eps-10.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_fashionmnist_eps-1.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_fashionmnist_eps-0.2.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpsinkhorn_fashionmnist_half.png" width="200" alt="DP-Sinkhorn-Fashion-MNIST-half">
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+DPGEN
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_fashionmnist_nonpriv.png" width="200" alt="DPGEN-Fashion-MNIST-nonpriv">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_fashionmnist_eps-10.png" width="200" alt="DPGEN-Fashion-MNIST-eps-10">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_fashionmnist_eps-1.png" width="200" alt="DPGEN-Fashion-MNIST-eps-1">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_fashionmnist_eps-0.2.png" width="200" alt="DPGEN-Fashion-MNIST-eps-0.2">
+</figure>
+</td>
+<td>
+<figure>
+<img src="./figs/dpgen_fashionmnist_half.png" width="200" alt="DPGEN-Fashion-MNIST-half">
+</figure>
+</td>
+</tr>
 </table>
 
 
@@ -560,5 +566,241 @@ Table 3-e: Challenging Scenario -- half dataset size at $\varepsilon=10$.
 
 ### Hyper-Parameters
 
-We list out the sets of hyper-parameters we experimented with for each combination of approach and scenario, as well as the best set of hyper-parameter obtained following the procedure described in [Evaluation Setups](./evaluation_setups.md).
+We list out the sets of hyper-parameters we experimented with for each combination of approach and scenario, as well as the best set of hyper-parameter obtained for MNIST and Fashion-MNIST following the procedure described in [Evaluation Setups](./evaluation_setups.md).
+
+#### DPGAN
+
+- non-private: 
+
+    - MNIST
+
+        | noise_multiplier | batch_size | clip_value | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 0 | 64 | 0.01 | 100 | * |
+
+    - FashionMNIST
+
+        | noise_multiplier | batch_size | clip_value | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 0 | 64 | 0.01 | 100 | * |
+
+- $\varepsilon=10.0$:
+
+    - MNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 1.41 | 0.01 | 64 | 96 |   | 
+        | 1.32 | 0.01 | 64 | 81 |    |
+        | 1.22 | 0.01 | 64 | 65 |     |
+        | 1.11 | 0.01 | 64 | 55 |    |
+        | 1.0 | 0.01 | 64 | 45 |  *   |
+        | 0.91 | 0.01 | 64 | 35 |    |
+
+    - Fashion-MNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 1.41 | 0.01 | 64 | 107 |   | 
+        | 1.32 | 0.01 | 64 | 90 |    |
+        | 1.2 | 0.01 | 64 | 69 |     |
+        | 1.1 | 0.01 | 64 | 60 | *   |
+        | 1.0 | 0.01 | 64 | 50 |     |
+        | 0.92 | 0.01 | 64 | 40 |    |
+
+- $\varepsilon=1.0$:
+
+    - MNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 4.98 | 0.01 | 64 | 10 |   | 
+        | 7.81 | 0.01 | 64 | 15 |   | 
+        | 15.0 | 0.01 | 64 | 20 |   | 
+        | 4.98 | 0.005 | 64 | 10 |   | 
+        | 7.81 | 0.005 | 64 | 15 |   | 
+        | 15.0 | 0.005 | 64 | 20 |   | 
+        | 1.95 | 0.01 | 32 | 5 |    |
+        | 2.74 | 0.01 | 32 | 10 |    |
+        | 3.42 | 0.01 | 32 | 15 |    |
+        | 4.07 | 0.01 | 32 | 20 |    |
+        | 6.77 | 0.01 | 32 | 40 |    |
+        | 1.95 | 0.005 | 32 | 5 |    |
+        | 2.74 | 0.005 | 32 | 10 |    |
+        | 3.42 | 0.005 | 32 | 15 |    |
+        | 4.07 | 0.005 | 32 | 20 |    |
+        | 6.77 | 0.005 | 32 | 40 | *   |
+
+    - Fashion-MNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 4.4 | 0.01 | 64 | 10 |   | 
+        | 6.33 | 0.01 | 64 | 15 |   | 
+        | 9.28 | 0.01 | 64 | 20 |   | 
+        | 4.4 | 0.005 | 64 | 10 |   | 
+        | 6.33 | 0.005 | 64 | 15 |   | 
+        | 9.28 | 0.005 | 64 | 20 |   | 
+        | 1.85 | 0.01 | 32 | 5 |    |
+        | 2.57 | 0.01 | 32 | 10 |    |
+        | 3.19 | 0.01 | 32 | 15 |    |
+        | 3.76 | 0.01 | 32 | 20 |    |
+        | 5.98 | 0.01 | 32 | 40 |    |
+        | 1.85 | 0.005 | 32 | 5 |    |
+        | 2.57 | 0.005 | 32 | 10 |    |
+        | 3.19 | 0.005 | 32 | 15 |    |
+        | 3.76 | 0.005 | 32 | 20 |    |
+        | 5.98 | 0.005 | 32 | 40 | *   |
+
+- $\varepsilon=0.2$:
+
+    - MNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 7.6 | 0.01 | 16 | 2 |     |
+        | 3.68 | 0.01 | 16 | 1 |     |
+        | 7.6 | 0.005 | 16 | 2 |     |
+        | 3.68 | 0.005 | 16 | 1 |  *   |
+        | 7.6 | 0.001 | 16 | 2 |     |
+        | 3.68 | 0.001 | 16 | 1 |     |
+        | 250.0 | 0.01 | 64 | 1 |   |
+        | 360.0 | 0.01 | 64 | 2 |   |
+        | 430.0 | 0.01 | 64 | 3 |   |
+        | 500.0 | 0.01 | 64 | 4 |   |
+        | 560.0 | 0.01 | 64 | 5 |   |
+        | 250.0 | 0.005 | 64 | 1 |   |
+        | 360.0 | 0.005 | 64 | 2 |   |
+        | 430.0 | 0.005 | 64 | 3 |   |
+        | 500.0 | 0.005 | 64 | 4 |   |
+        | 560.0 | 0.005 | 64 | 5 |   |
+        | 250.0 | 0.001 | 64 | 1 |   |
+        | 360.0 | 0.001 | 64 | 2 |   |
+        | 430.0 | 0.001 | 64 | 3 |   |
+        | 500.0 | 0.001 | 64 | 4 |   |
+        | 560.0 | 0.001 | 64 | 5 |   |
+
+    - FashionMNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 12.2 | 0.01 | 16 | 3 |     |
+        | 5.95 | 0.01 | 16 | 2 |     |
+        | 3.31 | 0.01 | 16 | 1 |     |
+        | 12.2 | 0.005 | 16 | 3 |     |
+        | 5.95 | 0.005 | 16 | 2 |     |
+        | 3.31 | 0.005 | 16 | 1 |     |
+        | 12.2 | 0.001 | 16 | 3 |     |
+        | 5.95 | 0.001 | 16 | 2 |     |
+        | 3.31 | 0.001 | 16 | 1 |     |
+        | 234.0 | 0.01 | 64 | 1 |   |
+        | 331.0 | 0.01 | 64 | 2 |   |
+        | 405.0 | 0.01 | 64 | 3 |   |
+        | 468.0 | 0.01 | 64 | 4 |   |
+        | 523.0 | 0.01 | 64 | 5 |   |
+        | 234.0 | 0.005 | 64 | 1 |   |
+        | 331.0 | 0.005 | 64 | 2 |   |
+        | 405.0 | 0.005 | 64 | 3 |   |
+        | 468.0 | 0.005 | 64 | 4 |   |
+        | 523.0 | 0.005 | 64 | 5 |   |
+        | 234.0 | 0.001 | 64 | 1 |   |
+        | 331.0 | 0.001 | 64 | 2 | *  |
+        | 405.0 | 0.001 | 64 | 3 |   |
+        | 468.0 | 0.001 | 64 | 4 |   |
+        | 523.0 | 0.001 | 64 | 5 |   |
+
+- half:
+
+    - MNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 1.41 | 0.01 | 64 | 47 |   |
+        | 1.32 | 0.01 | 64 | 40 |   |
+        | 1.2 | 0.01 | 64 | 30 |   |
+        | 1.1 | 0.01 | 64 | 26 |   |
+        | 1.0 | 0.01 | 64 | 21 |   |
+        | 0.9 | 0.01 | 64 | 16 |   |
+        | 1.41 | 0.01 | 32 | 98 |   |
+        | 1.32 | 0.01 | 32 | 82 |   |
+        | 1.2 | 0.01 | 32 | 64 |   |
+        | 1.1 | 0.01 | 32 | 55 |   |
+        | 1.0 | 0.01 | 32 | 46 |   |
+        | 0.9 | 0.01 | 32 | 35 | *  |
+
+
+    - FashionMNIST
+
+        | noise_multiplier | clip_value | batch_size | epoch | best |
+        | ---------------- | ---------- | ----- | ---- | ---- |
+        | 1.41 | 0.01 | 64 | 50 |   |
+        | 1.32 | 0.01 | 64 | 42 | *  |
+        | 1.2 | 0.01 | 64 | 33 |   |
+        | 1.1 | 0.01 | 64 | 28 |   |
+        | 1.0 | 0.01 | 64 | 23 |   |
+        | 0.9 | 0.01 | 64 | 17 |   |
+        | 1.41 | 0.01 | 32 | 105 |   |
+        | 1.32 | 0.01 | 32 | 88 |   |
+        | 1.2 | 0.01 | 32 | 68 |   |
+        | 1.1 | 0.01 | 32 | 59 |   |
+        | 1.0 | 0.01 | 32 | 49 |   |
+        | 0.9 | 0.01 | 32 | 37 |   |
+
+#### DP-CGAN
+
+#### GS-WGAN
+
+- non-private:
+
+    | noise_multiplier | batch_size | iters | MNIST best | FashionMNIST best |
+    | ---------------- | ---------- | ----- | ---- | ---- |
+    | 0.0 | 32 | 20000 | * | * |
+
+
+- $\varepsilon=10.0$: 
+
+    | noise_multiplier | batch_size | iters | MNIST best | FashionMNIST best |
+    | ---------------- | ---------- | ----- | ---- | ---- |
+    | 1.07 | 32 | 20000 | * | * |
+    | 1.07 | 64 | 10000 |   |   |
+    | 0.802 | 32 | 10000 |  |   |
+
+
+- $\varepsilon=1.0$:
+
+    | noise_multiplier | batch_size | iters | MNIST best | FashionMNIST best |
+    | ---------------- | ---------- | ----- | ---- | ---- |
+    | 2.29 | 12 | 4000 |    |   |
+    | 2.29 | 16 | 3000 |    |   |
+    | 2.62 | 16 | 4000 |  *  |  |
+    | 2.62 | 32 | 2000 |    |   |
+    | 3.68 | 32 | 4000 |    |   |
+    | 4.13 | 32 | 5000 |    |   |
+    | 4.54 | 32 | 6000 |    | * |
+    | 4.92 | 32 | 7000 |    |   |
+
+- $\varepsilon=0.2$:
+
+    | noise_multiplier | batch_size | iters | MNIST best | FashionMNIST best |
+    | ---------------- | ---------- | ----- | ---- | ---- |
+    | 3.12 | 16 | 200 |   *  |  |
+    | 5.49 | 16 | 500 |     |   |
+    | 8.13 | 16 | 800 |     |   |
+    | 10.45 | 16 | 1000 |     | |
+    | 4.71 | 32 | 200 |     |   |
+    | 10.45 | 32 | 500 |     | * |
+
+- half:
+
+    | noise_multiplier | batch_size | iters | MNIST best | FashionMNIST best |
+    | ---------------- | ---------- | ----- | ---- | ---- |
+    | 1.07 | 32 | 20000 | * | * |
+    | 1.07 | 64 | 10000 |   |   |
+    | 0.802 | 32 | 10000 |  |   |
+
+#### DP-MERF
+
+#### DPGEN
+
+#### DP-Sinkhorn
 

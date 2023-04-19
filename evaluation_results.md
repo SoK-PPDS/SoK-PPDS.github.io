@@ -2,9 +2,11 @@
 
 ### Table of Contents
 
-- [Runtime of Different Approaches](#runtime-of-different-approaches)
-- [Visualization of Synthesized Images](#visualization-of-synthesized-images)
-- [Full Evaluation Results](#full-evaluation-results)
+- [Additional Experimental Results](#additional-experimental-results)
+  - [Table of Contents](#table-of-contents)
+  - [Runtime of Different Approaches](#runtime-of-different-approaches)
+  - [Visualization of Synthesized Images](#visualization-of-synthesized-images)
+  - [Full Evaluation Results](#full-evaluation-results)
 
 ### Runtime of Different Approaches
 
@@ -59,7 +61,16 @@ Note to readers:
 
 Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The five columns are "non-private", "$\varepsilon=10$", "$\varepsilon=1$", "$\varepsilon=0.2$", and "half" from left to right.
 
-<link rel="stylesheet" type="text/css" href="./styles.css">
+|          | non-private                        | $\varepsilon=10$ | $\varepsilon=1$ | $\varepsilon=0.2$ | half |
+|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
+| |![Image 1][img1-1] | ![Image 2][img1-2] | ![Image 3][img1-3] | ![Image 3][img1-4] | ![Image 3][img1-5] |
+
+[img1-1]: ./figs/dpgan_mnist_nonpriv.png
+[img1-2]: ./figs/dpgan_mnist_eps-10.png
+[img1-3]: ./figs/dpgan_mnist_eps-1.png
+[img1-4]: ./figs/dpgan_mnist_eps-1.png
+[img1-5]: ./figs/dpgan_mnist_half.png
+
 
 <table>
   <tr>

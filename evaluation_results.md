@@ -68,27 +68,27 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The f
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_mnist_nonpriv.png" width="200" height="200" alt="DPGAN-MNIST-nonpriv">
+        <img src="./figs/dpgan_mnist_nonpriv.png" height="200" alt="DPGAN-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_mnist_eps-10.png" width="200" height="200" alt="DPGAN-MNIST-eps-10">
+        <img src="./figs/dpgan_mnist_eps-10.png" height="200" alt="DPGAN-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_mnist_eps-1.png" width="200" height="200" alt="DPGAN-MNIST-eps-1">
+        <img src="./figs/dpgan_mnist_eps-1.png" height="200" alt="DPGAN-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_mnist_eps-0.2.png" width="200" height="200" alt="DPGAN-MNIST-eps-0.2">
+        <img src="./figs/dpgan_mnist_eps-0.2.png" height="200" alt="DPGAN-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_mnist_half.png" width="200" height="200" alt="DPGAN-MNIST-half">
+        <img src="./figs/dpgan_mnist_half.png" height="200" alt="DPGAN-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -98,27 +98,27 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The f
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_mnist_nonpriv.png" width="200" height="200" alt="DP-CGAN-MNIST-nonpriv">
+        <img src="./figs/dpcgan_mnist_nonpriv.png" height="200" alt="DP-CGAN-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_mnist_eps-10.png" width="200" height="200" alt="DP-CGAN-MNIST-eps-10">
+        <img src="./figs/dpcgan_mnist_eps-10.png" height="200" alt="DP-CGAN-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_mnist_eps-1.png" width="200" height="200" alt="DP-CGAN-MNIST-eps-1">
+        <img src="./figs/dpcgan_mnist_eps-1.png" height="200" alt="DP-CGAN-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_mnist_eps-0.2.png" width="200" height="200" alt="DP-CGAN-MNIST-eps-0.2">
+        <img src="./figs/dpcgan_mnist_eps-0.2.png" height="200" alt="DP-CGAN-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_mnist_half.png" width="200" height="200" alt="DP-CGAN-MNIST-half">
+        <img src="./figs/dpcgan_mnist_half.png" height="200" alt="DP-CGAN-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -128,27 +128,27 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The f
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_mnist_nonpriv.png" width="200" height="200" alt="GS-WGAN-MNIST-nonpriv">
+        <img src="./figs/gswgan_mnist_nonpriv.png" height="200" alt="GS-WGAN-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_mnist_eps-10.png" width="200" height="200" alt="GS-WGAN-MNIST-eps-10">
+        <img src="./figs/gswgan_mnist_eps-10.png" height="200" alt="GS-WGAN-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_mnist_eps-1.png" width="200" height="200" alt="GS-WGAN-MNIST-eps-1">
+        <img src="./figs/gswgan_mnist_eps-1.png" height="200" alt="GS-WGAN-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_mnist_eps-0.2.png" width="200" height="200" alt="GS-WGAN-MNIST-eps-0.2">
+        <img src="./figs/gswgan_mnist_eps-0.2.png" height="200" alt="GS-WGAN-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_mnist_half.png" width="200" height="200" alt="GS-WGAN-MNIST-half">
+        <img src="./figs/gswgan_mnist_half.png" height="200" alt="GS-WGAN-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -158,27 +158,27 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The f
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_mnist_nonpriv.png" width="200" height="200" alt="DP-MERF-MNIST-nonpriv">
+        <img src="./figs/dpmerf_mnist_nonpriv.png" height="200" alt="DP-MERF-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_mnist_eps-10.png" width="200" height="200" alt="DP-MERF-MNIST-eps-10">
+        <img src="./figs/dpmerf_mnist_eps-10.png" height="200" alt="DP-MERF-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_mnist_eps-1.png" width="200" height="200" alt="DP-MERF-MNIST-eps-1">
+        <img src="./figs/dpmerf_mnist_eps-1.png" height="200" alt="DP-MERF-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_mnist_eps-0.2.png" width="200" height="200" alt="DP-MERF-MNIST-eps-0.2">
+        <img src="./figs/dpmerf_mnist_eps-0.2.png" height="200" alt="DP-MERF-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_mnist_half.png" width="200" height="200" alt="DP-MERF-MNIST-half">
+        <img src="./figs/dpmerf_mnist_half.png" height="200" alt="DP-MERF-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -188,27 +188,27 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The f
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_mnist_nonpriv.png" width="200" height="200" alt="DP-Sinkhorn-MNIST-nonpriv">
+        <img src="./figs/dpsinkhorn_mnist_nonpriv.png" height="200" alt="DP-Sinkhorn-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_mnist_eps-10.png" width="200" height="200" alt="DP-Sinkhorn-MNIST-eps-10">
+        <img src="./figs/dpsinkhorn_mnist_eps-10.png" height="200" alt="DP-Sinkhorn-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_mnist_eps-1.png" width="200" height="200" alt="DP-Sinkhorn-MNIST-eps-1">
+        <img src="./figs/dpsinkhorn_mnist_eps-1.png" height="200" alt="DP-Sinkhorn-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_mnist_eps-0.2.png" width="200" height="200" alt="DP-Sinkhorn-MNIST-eps-0.2">
+        <img src="./figs/dpsinkhorn_mnist_eps-0.2.png" height="200" alt="DP-Sinkhorn-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_mnist_half.png" width="200" height="200" alt="DP-Sinkhorn-MNIST-half">
+        <img src="./figs/dpsinkhorn_mnist_half.png" height="200" alt="DP-Sinkhorn-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -218,27 +218,27 @@ Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The f
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_mnist_nonpriv.png" width="200" height="200" alt="DPGEN-MNIST-nonpriv">
+        <img src="./figs/dpgen_mnist_nonpriv.png" height="200" alt="DPGEN-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_mnist_eps-10.png" width="200" height="200" alt="DPGEN-MNIST-eps-10">
+        <img src="./figs/dpgen_mnist_eps-10.png" height="200" alt="DPGEN-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_mnist_eps-1.png" width="200" height="200" alt="DPGEN-MNIST-eps-1">
+        <img src="./figs/dpgen_mnist_eps-1.png" height="200" alt="DPGEN-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_mnist_eps-0.2.png" width="200" height="200" alt="DPGEN-MNIST-eps-0.2">
+        <img src="./figs/dpgen_mnist_eps-0.2.png" height="200" alt="DPGEN-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_mnist_half.png" width="200" height="200" alt="DPGEN-MNIST-half">
+        <img src="./figs/dpgen_mnist_half.png" height="200" alt="DPGEN-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -255,27 +255,27 @@ Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_fashionmnist_nonpriv.png" width="200" height="200" alt="DPGAN-Fashion-MNIST-nonpriv">
+        <img src="./figs/dpgan_fashionmnist_nonpriv.png" height="200" alt="DPGAN-Fashion-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_fashionmnist_eps-10.png" width="200" height="200" alt="DPGAN-Fashion-MNIST-eps-10">
+        <img src="./figs/dpgan_fashionmnist_eps-10.png" height="200" alt="DPGAN-Fashion-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_fashionmnist_eps-1.png" width="200" height="200" alt="DPGAN-Fashion-MNIST-eps-1">
+        <img src="./figs/dpgan_fashionmnist_eps-1.png" height="200" alt="DPGAN-Fashion-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_fashionmnist_eps-0.2.png" width="200" height="200" alt="DPGAN-Fashion-MNIST-eps-0.2">
+        <img src="./figs/dpgan_fashionmnist_eps-0.2.png" height="200" alt="DPGAN-Fashion-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgan_fashionmnist_half.png" width="200" height="200" alt="DPGAN-Fashion-MNIST-half">
+        <img src="./figs/dpgan_fashionmnist_half.png" height="200" alt="DPGAN-Fashion-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -285,27 +285,27 @@ Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_fashionmnist_nonpriv.png" width="200" height="200" alt="DP-CGAN-Fashion-MNIST-nonpriv">
+        <img src="./figs/dpcgan_fashionmnist_nonpriv.png" height="200" alt="DP-CGAN-Fashion-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_fashionmnist_eps-10.png" width="200" height="200" alt="DP-CGAN-Fashion-MNIST-eps-10">
+        <img src="./figs/dpcgan_fashionmnist_eps-10.png" height="200" alt="DP-CGAN-Fashion-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_fashionmnist_eps-1.png" width="200" height="200" alt="DP-CGAN-Fashion-MNIST-eps-1">
+        <img src="./figs/dpcgan_fashionmnist_eps-1.png" height="200" alt="DP-CGAN-Fashion-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_fashionmnist_eps-0.2.png" width="200" height="200" alt="DP-CGAN-Fashion-MNIST-eps-0.2">
+        <img src="./figs/dpcgan_fashionmnist_eps-0.2.png" height="200" alt="DP-CGAN-Fashion-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpcgan_fashionmnist_half.png" width="200" height="200" alt="DP-CGAN-Fashion-MNIST-half">
+        <img src="./figs/dpcgan_fashionmnist_half.png" height="200" alt="DP-CGAN-Fashion-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -315,27 +315,27 @@ Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_fashionmnist_nonpriv.png" width="200" height="200" alt="GS-WGAN-Fashion-MNIST-nonpriv">
+        <img src="./figs/gswgan_fashionmnist_nonpriv.png" height="200" alt="GS-WGAN-Fashion-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_fashionmnist_eps-10.png" width="200" height="200" alt="GS-WGAN-Fashion-MNIST-eps-10">
+        <img src="./figs/gswgan_fashionmnist_eps-10.png" height="200" alt="GS-WGAN-Fashion-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_fashionmnist_eps-1.png" width="200" height="200" alt="GS-WGAN-Fashion-MNIST-eps-1">
+        <img src="./figs/gswgan_fashionmnist_eps-1.png" height="200" alt="GS-WGAN-Fashion-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_fashionmnist_eps-0.2.png" width="200" height="200" alt="GS-WGAN-Fashion-MNIST-eps-0.2">
+        <img src="./figs/gswgan_fashionmnist_eps-0.2.png" height="200" alt="GS-WGAN-Fashion-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/gswgan_fashionmnist_half.png" width="200" height="200" alt="GS-WGAN-Fashion-MNIST-half">
+        <img src="./figs/gswgan_fashionmnist_half.png" height="200" alt="GS-WGAN-Fashion-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -345,27 +345,27 @@ Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_fashionmnist_nonpriv.png" width="200" height="200" alt="DP-MERF-Fashion-MNIST-nonpriv">
+        <img src="./figs/dpmerf_fashionmnist_nonpriv.png" height="200" alt="DP-MERF-Fashion-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_fashionmnist_eps-10.png" width="200" height="200" alt="DP-MERF-Fashion-MNIST-eps-10">
+        <img src="./figs/dpmerf_fashionmnist_eps-10.png" height="200" alt="DP-MERF-Fashion-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_fashionmnist_eps-1.png" width="200" height="200" alt="DP-MERF-Fashion-MNIST-eps-1">
+        <img src="./figs/dpmerf_fashionmnist_eps-1.png" height="200" alt="DP-MERF-Fashion-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_fashionmnist_eps-0.2.png" width="200" height="200" alt="DP-MERF-Fashion-MNIST-eps-0.2">
+        <img src="./figs/dpmerf_fashionmnist_eps-0.2.png" height="200" alt="DP-MERF-Fashion-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpmerf_fashionmnist_half.png" width="200" height="200" alt="DP-MERF-Fashion-MNIST-half">
+        <img src="./figs/dpmerf_fashionmnist_half.png" height="200" alt="DP-MERF-Fashion-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -375,27 +375,27 @@ Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_nonpriv.png" width="200" height="200" alt="DP-Sinkhorn-Fashion-MNIST-nonpriv">
+        <img src="./figs/dpsinkhorn_fashionmnist_nonpriv.png" height="200" alt="DP-Sinkhorn-Fashion-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_eps-10.png" width="200" height="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-10">
+        <img src="./figs/dpsinkhorn_fashionmnist_eps-10.png" height="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_eps-1.png" width="200" height="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-1">
+        <img src="./figs/dpsinkhorn_fashionmnist_eps-1.png" height="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_eps-0.2.png" width="200" height="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-0.2">
+        <img src="./figs/dpsinkhorn_fashionmnist_eps-0.2.png" height="200" alt="DP-Sinkhorn-Fashion-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpsinkhorn_fashionmnist_half.png" width="200" height="200" alt="DP-Sinkhorn-Fashion-MNIST-half">
+        <img src="./figs/dpsinkhorn_fashionmnist_half.png" height="200" alt="DP-Sinkhorn-Fashion-MNIST-half">
       </figure>
     </td>
   </tr>
@@ -405,27 +405,27 @@ Figure 2: **Synthesized Images by different approaches on Fashion-MNIST dataset.
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_fashionmnist_nonpriv.png" width="200" height="200" alt="DPGEN-Fashion-MNIST-nonpriv">
+        <img src="./figs/dpgen_fashionmnist_nonpriv.png" height="200" alt="DPGEN-Fashion-MNIST-nonpriv">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_fashionmnist_eps-10.png" width="200" height="200" alt="DPGEN-Fashion-MNIST-eps-10">
+        <img src="./figs/dpgen_fashionmnist_eps-10.png" height="200" alt="DPGEN-Fashion-MNIST-eps-10">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_fashionmnist_eps-1.png" width="200" height="200" alt="DPGEN-Fashion-MNIST-eps-1">
+        <img src="./figs/dpgen_fashionmnist_eps-1.png" height="200" alt="DPGEN-Fashion-MNIST-eps-1">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_fashionmnist_eps-0.2.png" width="200" height="200" alt="DPGEN-Fashion-MNIST-eps-0.2">
+        <img src="./figs/dpgen_fashionmnist_eps-0.2.png" height="200" alt="DPGEN-Fashion-MNIST-eps-0.2">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="./figs/dpgen_fashionmnist_half.png" width="200" height="200" alt="DPGEN-Fashion-MNIST-half">
+        <img src="./figs/dpgen_fashionmnist_half.png" height="200" alt="DPGEN-Fashion-MNIST-half">
       </figure>
     </td>
   </tr>

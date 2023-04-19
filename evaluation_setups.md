@@ -2,10 +2,12 @@
 
 
 ### Table of Contents
-- [More Details on Inclusion \& Exclusion Criteria](#more-details-on-inclusion--exclusion-criteria)
-- [Hyper-Parameters Tuning and Selection](#hyper-parameters-tuning-and-selection)
-- [Configurations and Hyper-Parameters for the Classifiers for Evaluation](#configurations-and-hyper-parameters-for-the-classifiers-for-evaluation)
-- [References](#references)
+- [Additional Details on Experimental Setups](#additional-details-on-experimental-setups)
+  - [Table of Contents](#table-of-contents)
+  - [More Details on Inclusion \& Exclusion Criteria](#more-details-on-inclusion--exclusion-criteria)
+  - [Hyper-Parameters Tuning and Selection](#hyper-parameters-tuning-and-selection)
+  - [Configurations and Hyper-Parameters for the Classifiers for Evaluation](#configurations-and-hyper-parameters-for-the-classifiers-for-evaluation)
+  - [References](#references)
 
 
 ### More Details on Inclusion & Exclusion Criteria
@@ -33,14 +35,9 @@ We aim to build a comprehensive benchmark covering all PPDS milestone approaches
 
 Figure 1. **Synthesized Images** by G-PATE and DataLens when trained on MNIST under $\varepsilon=10$.
 
-Figure 1-a: G-PATE.
-
-![G-PATE-MNIST-eps-10](./figs/gpate_mnist_eps-10.png)
-
-Figure 1-b: DataLens.
-
-![DataLens-MNIST-eps-10](./figs/datalens_mnist_eps-10.png)
-
+| G-PATE         | DataLens                        |
+|-----------------|---------------------------------|
+| ![G-PATE-MNIST-eps-10](./figs/gpate_mnist_eps-10.png) | ![DataLens-MNIST-eps-10](./figs/datalens_mnist_eps-10.png)
 
 ### Hyper-Parameters Tuning and Selection
 

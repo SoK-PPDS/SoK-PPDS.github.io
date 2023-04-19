@@ -59,6 +59,8 @@ Note to readers:
 
 Figure 1: **Synthesized Images by different approaches on MNIST dataset.** The five columns are "non-private", "$\varepsilon=10$", "$\varepsilon=1$", "$\varepsilon=0.2$", and "half" from left to right.
 
+<link rel="stylesheet" type="text/css" href="./styles.css">
+
 <table>
   <tr>
     <td>

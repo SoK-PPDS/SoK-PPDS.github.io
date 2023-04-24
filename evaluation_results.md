@@ -2,18 +2,10 @@
 
 ### Table of Contents
 
-- [Additional Experimental Results](#additional-experimental-results)
-  - [Table of Contents](#table-of-contents)
-  - [Runtime of Different Approaches](#runtime-of-different-approaches)
-  - [Visualization of Synthesized Images](#visualization-of-synthesized-images)
-  - [Full Evaluation Results](#full-evaluation-results)
-  - [Hyper-Parameters](#hyper-parameters)
-    - [DPGAN](#dpgan)
-    - [DP-CGAN](#dp-cgan)
-    - [GS-WGAN](#gs-wgan)
-    - [DP-MERF](#dp-merf)
-    - [DPGEN](#dpgen)
-    - [DP-Sinkhorn](#dp-sinkhorn)
+- [Runtime of Different Approaches](#runtime-of-different-approaches)
+- [Visualization of Synthesized Images](#visualization-of-synthesized-images)
+- [Full Evaluation Results](#full-evaluation-results)
+- [Hyper-Parameters](#hyper-parameters)
 
 ### Runtime of Different Approaches
 
@@ -730,7 +722,7 @@ We list out the sets of hyper-parameters we experimented with for each combinati
 
 
     - FashionMNIST
-
+    
         | noise_multiplier | clip_value | batch_size | epoch | best |
         | ---------------- | ---------- | ----- | ---- | ---- |
         | 1.41 | 0.01 | 64 | 50 |   |

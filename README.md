@@ -1,3 +1,15 @@
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7J70QW6MC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7J70QW6MC3');
+</script>
+</head>
+
 ## Supplementary Information for 2023 S&P Submission #311
 
 This website contains supplementary information for our 2023 S&P submission #311: SoK: Privacy-Preserving Data Synthesis.

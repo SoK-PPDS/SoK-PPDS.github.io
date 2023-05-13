@@ -1,3 +1,14 @@
 ## Issues with Existing Repositories
 
-To be filled in 1 day. Please check back later. :)
+### DPGEN
+
+Paper url: [https://openaccess.thecvf.com/content/CVPR2022/html/Chen_DPGEN_Differentially_Private_Generative_Energy-Guided_Network_for_Natural_Image_Synthesis_CVPR_2022_paper.html](https://openaccess.thecvf.com/content/CVPR2022/html/Chen_DPGEN_Differentially_Private_Generative_Energy-Guided_Network_for_Natural_Image_Synthesis_CVPR_2022_paper.html)
+
+Repository url: [https://github.com/chiamuyu/DPGEN](https://github.com/chiamuyu/DPGEN)
+
+- **Missing documentation and unprofessional repository**: The repository contains a ``README.md`` file with no actual content in it. The code is provided in ``DPGEN-SIMPLE.zip`` which is not very professional.
+- **Un-runnable code**: Extracting the content from ``DPGEN-SIMPLE.zip`` gives code that is not runnable. There’s a ``NCSNRunner`` in line 161 of ``main.py``, but there’s no ``NCSNRunner`` class anywhere in the code. Changing ``NCSNRunner`` to ``Runner`` gives runnable code.
+- **Incorrect configuration**: The authors set ``random_flip: true`` for MNIST in ``./configs/mnist.yml``, which does not make sense. We never want our generator to produce digits that are flipped. 
+- **Missing configurations for $\varepsilon=1$ and $\varepsilon=0.2$**: The paper reported results for MNIST and Fashion-MNIST on $\varepsilon=1$ and $\varepsilon=0.2$ in Tables 3 and 4, but neither the paper nor the repository provided the hyper-parameters for these two settings. Similarly, the paper reported results on two other datasets CelebA and LSUN-bedroom, but the associated code and configurations are missing in the repository. 
+- **Severe limitation of the approach**: DPGEN can only generate images but not labels. The authors didn't mention this in their paper. From our email communication with them, we learned that the way they produce labels is through training a classifier to produce labels. This was not clarified in the paper as well. 
+- **Potential privacy leakage**: Training a classifier on the private dataset to label the generated data exhibits privacy concerns. We inquired the authors about the issue, and the authors confirmed the issue and further clarified that "To address this, we suggest training the classifier on a dataset different from the one used to train DPGEN. For instance, some studies split their dataset into public and private parts, and only the private dataset needs to be trained with DPGEN." However, upon examining their code, we found that ``train_fashion_mnist_cls.ipynb`` actually trains a classifier on the private dataset, meaning that the results in the paper may not strictly respect the reported $\varepsilon$ values. 

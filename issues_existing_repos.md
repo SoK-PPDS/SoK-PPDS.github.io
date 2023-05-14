@@ -33,3 +33,14 @@ Repository url: [https://github.com/vanderschaarlab/mlforhealthlabpub/tree/main/
 - In ``main_pategan_experiment.py``
   - **Variable type error**: Line 171-175 specifies the argument "the number of teachers" $k$. Its type should be ``int`` instead of ``float`` as written in line 175.
 - **Inapplicability to image datasets**: PATE-GAN was proposed and evaluated on tabular data only in their paper. Although G-PATE evaluated PATE-GAN and reported non-trivial results, we had similar findings as what GS-WGAN reported in their Appendix C.4 --- “the generated samples are classiﬁed as fake by all teacher discriminators and the learning signals (gradients) for student discriminator and the generator vanish.”
+
+### DP-Sinkhorn
+
+Paper url: [https://openreview.net/forum?id=waWmZSw0mn](https://openreview.net/forum?id=waWmZSw0mn)
+
+Repository url: [https://github.com/nv-tlabs/DP-Sinkhorn_code](https://github.com/nv-tlabs/DP-Sinkhorn_code)
+
+- **Variable error**: In line 163 of ``sinkhorn_poisson.py``, the ``global_step`` is always 1, and therefore the calculated eps never grows, and line 165 will always be false. The variable ``global_step`` should be replaced by ``args.global_step``.
+- **Inconsistent hyper-parameter configurations**: The best hyper-parameters reported in the paper are inconsistent with the commands in the repository.
+- **Mistakes in statistics**: In Appendix D.4, the authors reported that MNIST takes 160,000 training iterations, i.e., 130 epochs (1200 iters/epoch). But in our experiments, MNIST would take more than 3000 epochs.
+

@@ -10,9 +10,13 @@
 </script>
 </head>
 
-## Supplementary Information for 2024 S&P Submission #311
+This website contains the supplementary information for our paper "*SoK: Privacy-Preserving Data Synthesis*", accepted at IEEE S&P 2024.
 
-This website contains supplementary information for our 2024 S&P submission #311: SoK: Privacy-Preserving Data Synthesis.
+**Main paper**: [ArXiv link](https://arxiv.org/abs/2307.02106)
+
+**Authors**: Yuzheng Hu\*, Fan Wu\*, Qinbin Li, Yunhui Long, Gonzalo Munilla Garrido, Chang Ge, Bolin Ding, David Forsyth, Bo Li, Dawn Song
+
+**Contact**: Yuzheng Hu <[yh46@illinois.edu](mailto:yh46@illinois.edu)> and Fan Wu <[fanw6@illinois.edu](mailto:fanw6@illinois.edu)>
 
 ### 1. [Data Utility and Fidelity Measures](./data_utility_and_fidelity.md)
 

@@ -1,3 +1,5 @@
+**Back to [home page](./README.md)**
+
 ## Data Utility and Fidelity Measures
 
 We present the **fidelity** and **utility** measures for the synthetic data, where fidelity measures include various intrinsic properties of synthetic data, and utility measures refer to the performance of synthetic data when used for downstream applications.  
